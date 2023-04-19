@@ -18,7 +18,7 @@ let youtubeResults=(inputValue)=>{
     {
         ytmusic.removeChild(ytmusic.lastChild)
     }
-    let link=`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${inputValue}&maxResults=6&type=video&key=AIzaSyDrakPogPsEqtniLjK4MPkimLRUGsObAXQ`
+    let link=`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${inputValue+" song"}&maxResults=6&type=video&key=AIzaSyDrakPogPsEqtniLjK4MPkimLRUGsObAXQ`
     fetch(link)
     .then(res=>{
        res.json().then((data)=>{
