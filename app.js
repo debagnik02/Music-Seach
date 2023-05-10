@@ -119,7 +119,7 @@ let soundcloudResults=async (value,offset)=>{
     let res=await fetch(`https://soundcloud-scraper.p.rapidapi.com/v1/search/tracks?term=${value}&limit=${6}&offset=${(offset-1)*6}`,{
 
     headers:{
-        "X-RapidAPI-Key":"605f24bd7fmshdf81bc20da8d50ep171456jsn63f75bd3db92",
+        "X-RapidAPI-Key":"ff8367dc98mshd655e7063a2c871p1dae73jsn387e1a47b348",
         "X-RapidAPI-Host":"soundcloud-scraper.p.rapidapi.com"
     }
 })
